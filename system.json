@@ -1,0 +1,32 @@
+{
+    "id": "conquestcore",
+    "title": "Conquest Core",
+    "description": "A system agnostic framework for creating epic campaigns for your favorite tabletop wargames.",
+    "version": "1.0.0",
+    "compatibility": {
+      "minimum": 12,
+      "verified": 12
+    },
+    "authors": [{
+      "name": "Redbeard",
+      "url": "YOUR WEBSITE ADDRESS HERE",
+      "email": "YOUR EMAIL ADDRESS HERE",
+      "discord": "YOUR DISCORD USERNAME HERE"
+    }],
+    "esmodules": ["conquest-core.mjs"],
+    "styles": ["styles/system-styles.css"],
+    "languages": [{
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }],
+    "socket": false,
+    "initiative": "2d6",
+    "grid": {
+      "distance": 10,
+      "units": "ft"
+    },
+    "url": "https://your/hosted/system/repo/",
+    "manifest": "https://your/hosted/system/repo/system.json",
+    "download": "https://your/packaged/download/archive.zip"
+  }

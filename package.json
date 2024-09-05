@@ -1,0 +1,25 @@
+{
+  "name": "conquestcore",
+  "version": "0.0.1",
+  "description": "A system agnostic framework for creating epic campaigns for your favorite tabletop wargames.",
+  "main": "conquest-core.mjs",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wardmanm/conquest-core.git"
+  },
+  "keywords": [
+    "foundry",
+    "vtt",
+    "wargaming",
+    "tabletop"
+  ],
+  "author": "Redbeard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wardmanm/conquest-core/issues"
+  },
+  "homepage": "https://github.com/wardmanm/conquest-core#readme"
+}
