@@ -1,0 +1,8 @@
+{
+    "TURN": {
+        "LogisticsLabel": "Logistics",
+        "ActionLabel": "Action",
+        "TurnLabel": "Turn",
+        "NextBtnLabel": "Next Turn"
+    }
+}

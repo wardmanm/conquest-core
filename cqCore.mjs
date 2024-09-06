@@ -1,7 +1,10 @@
 // import { SystemActor, SystemItem } from "./module/documents.mjs";
 // import { HeroDataModel, VillainDataModel, PawnDataModel, WeaponDataModel, SpellDataModel } from "./module/data-models.mjs";
+import CQCORE from "./module/config.mjs";
 
 Hooks.once("init", () => {
+  CONFIG.CQCORE = CQCORE;
+  CONFIG.debug.hooks = true;
   // // Configure custom Document implementations.
   // CONFIG.Actor.documentClass = SystemActor;
   // CONFIG.Item.documentClass = SystemItem;
