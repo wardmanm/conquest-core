@@ -2,9 +2,13 @@
   "name": "conquestcore",
   "version": "0.0.1",
   "description": "A system agnostic framework for creating epic campaigns for your favorite tabletop wargames.",
-  "main": "conquest-core.mjs",
+  "main": "cqCore.mjs",
   "scripts": {
-    "test": "test"
+    "build": "npm run build:code && npm run build:sass-dev",
+    "build:prod": "npm run build:code && npm run build:sass-prod",
+    "build:code": "rollup cqCore.mjs -f es -o cqCore-compiled.mjs -p node-resolve -m --sourcemapFile cqCore.mjs",
+    "build:sass-dev": "sass --style=expanded styles/scss:styles/css",
+    "build:sass-prod": "sass --no-source-map --style=compressed styles/scss:styles/css"
   },
   "repository": {
     "type": "git",
@@ -28,9 +32,8 @@
     "@rollup/plugin-node-resolve": "^15.2.1",
     "eslint-plugin-jsdoc": "^46.5.0",
     "fancy-log": "^2.0.0",
-    "less": "^4.2.0",
-    "less-watch-compiler": "^1.16.3",
     "rollup": "^3.28.1",
+    "sass": "^1.78.0",
     "yargs": "^17.7.2"
   }
 }

@@ -1,5 +1,5 @@
 {
-    "id": "conquestcore",
+    "id": "conquest-core",
     "title": "Conquest Core",
     "description": "A system agnostic framework for creating epic campaigns for your favorite tabletop wargames.",
     "version": "0.0.1",
@@ -13,8 +13,8 @@
       "email": "YOUR EMAIL ADDRESS HERE",
       "discord": "YOUR DISCORD USERNAME HERE"
     }],
-    "esmodules": ["conquest-core.mjs"],
-    "styles": ["styles/system-styles.css"],
+    "esmodules": ["cqCore.mjs"],
+    "styles": ["styles/css/system-styles.css"],
     "languages": [{
       "lang": "en",
       "name": "English",
