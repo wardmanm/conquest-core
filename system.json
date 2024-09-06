@@ -2,7 +2,7 @@
     "id": "conquestcore",
     "title": "Conquest Core",
     "description": "A system agnostic framework for creating epic campaigns for your favorite tabletop wargames.",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "compatibility": {
       "minimum": 12,
       "verified": 12
