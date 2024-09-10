@@ -1,11 +1,13 @@
-<div>
-    {{ localize "TURN.TurnLabel" }}: {{ CurentTurn }}
-</div>
-<div>
-    {{ localize "TURN.PhaseLabel" }}: {{ CurentPhase }}
-</div>
-<div>
-    <button>
-        {{ localize "TURN.NextBtnLabel" }}
-    </button>
+<div id="cqCore-turn-counter" class="container">
+    <div>
+        {{ localize "TURN.TurnLabel" }}: {{ @root.counter }}
+    </div>
+    <div>
+        {{ localize "TURN.PhaseLabel" }}: {{ @root.phase }}
+    </div>
+    <div>
+        <button id="next-turn-btn" type="button" data-action="onNextTurn">
+            {{ localize "TURN.NextBtnLabel" }}
+        </button>
+    </div>
 </div>

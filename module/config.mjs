@@ -1,19 +1,16 @@
 // Namespace Configuration Values
-const CQCORE = {};
+const CQCONFIG = {};
 
-CQCORE.turn = {
-    value: 1,
+CQCONFIG.turn = {
     label: "TURN.TurnLabel",
     phase: {
         logistics: {
-            label: "TURN.LogisticsLabel",
-            current: true
+            label: "TURN.LogisticsLabel"
         },
         action: {
-            label: "TURN.ActionLabel",
-            current: false
+            label: "TURN.ActionLabel"
         }
     }
 }
 
-export default CQCORE;
+export default CQCONFIG;

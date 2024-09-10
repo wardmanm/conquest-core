@@ -1,3 +1,9 @@
-
+#cqCore-turn-counter {
+  min-width: 200px;
+  min-height: 75px;
+}
+#cqCore-turn-counter .container {
+  display: flex;
+}
 
 /*# sourceMappingURL=system-styles.css.map */

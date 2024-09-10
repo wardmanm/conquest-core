@@ -1,34 +1,27 @@
-// import { SystemActor, SystemItem } from "./module/documents.mjs";
-// import { HeroDataModel, VillainDataModel, PawnDataModel, WeaponDataModel, SpellDataModel } from "./module/data-models.mjs";
-import CQCORE from "./module/config.mjs";
+import CQCONFIG from "./module/config.mjs";
+import TurnCounter from "./module/ui/turn-counter.mjs";
+import { registerSettings } from "./module/settings.mjs";
+
+globalThis.cqCore = {
+  config: CQCONFIG,
+  globals: { turn: { counter: 1, phase: "log" } }
+};
 
 Hooks.once("init", () => {
-  CONFIG.CQCORE = CQCORE;
-  CONFIG.debug.hooks = true;
-  // // Configure custom Document implementations.
-  // CONFIG.Actor.documentClass = SystemActor;
-  // CONFIG.Item.documentClass = SystemItem;
+  globalThis.cqCore = game.cqCore = Object.assign(game.system, globalThis.cqCore);
+  CONFIG.CQCORE = CQCONFIG;
 
-  // // Configure System Data Models.
-  // CONFIG.Actor.dataModels = {
-  //   hero: HeroDataModel,
-  //   villain: VillainDataModel,
-  //   pawn: PawnDataModel
-  // };
-  // CONFIG.Item.dataModels = {
-  //   weapon: WeaponDataModel,
-  //   spell: SpellDataModel
-  // };
+  registerSettings();
+});
 
-  // // Configure trackable attributes.
-  // CONFIG.Actor.trackableAttributes = {
-  //   hero: {
-  //     bar: ["resources.health", "resources.power", "goodness"],
-  //     value: ["progress"]
-  //   },
-  //   pawn: {
-  //     bar: ["resources.health", "resources.power"],
-  //     value: []
-  //   }
-  // };
+Hooks.once("ready", () => {
+  TurnCounter._onReady();
+});
+
+Hooks.on("cqCore-phase-change", (phase) => {
+  console.log("cqCore-phase-change", phase);
+});
+
+Hooks.on("cqCore-turn-change", (turn) => {
+  console.log("cqCore-turn-change", turn);
 });

@@ -3,6 +3,9 @@
         "LogisticsLabel": "Logistics",
         "ActionLabel": "Action",
         "TurnLabel": "Turn",
-        "NextBtnLabel": "Next Turn"
+        "NextBtnLabel": "Next Turn",
+        "PhaseLabel": "Phase",
+        "TurnCounterLabel": "Turn Counter",
+        "TurnCounterHint": "Current turn and phase of the turn sequence."
     }
 }
