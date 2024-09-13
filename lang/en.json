@@ -1,4 +1,8 @@
 {
+    "CORE": {
+        "SidebarLabel": "Conquest Core",
+        "SidebarHint": "Show the Conquest Core sidebar."
+    },
     "TURN": {
         "LogisticsLabel": "Logistics",
         "ActionLabel": "Action",
